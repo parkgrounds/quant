@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação: Gaps de Preço em Tempos de Incerteza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .slide {
+            min-height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .slide {
+                padding: 4rem;
+            }
+        }
+        .fade-in {
+            animation: fadeInAnimation 1s ease-in forwards;
+            opacity: 0;
+        }
+        .fade-in-delay-1 { animation-delay: 0.2s; }
+        .fade-in-delay-2 { animation-delay: 0.4s; }
+        .fade-in-delay-3 { animation-delay: 0.6s; }
+        .fade-in-delay-4 { animation-delay: 0.8s; }
+
+        @keyframes fadeInAnimation {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <div class="scroll-container">
+
+        <!-- Slide 1: Título -->
+        <div id="slide-1" class="slide items-center text-center bg-blue-900/30">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-blue-300 tracking-tight fade-in">Gaps de Preço em Tempos de Incerteza</h1>
+                <p class="mt-4 text-xl md:text-2xl text-gray-300 fade-in fade-in-delay-1">Desvendando o Impacto do Anúncio de Tarifas no S&P 600</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Seção 1 - O Palco -->
+        <div id="slide-2" class="slide">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-sm font-bold uppercase text-blue-400 tracking-widest fade-in">Parte 1: O Cenário</h2>
+                <h3 class="mt-2 text-3xl md:text-5xl font-bold tracking-tight text-white fade-in fade-in-delay-1">O Mundo em 2025: Tensão no Ar</h3>
+                <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-2">
+                    Imagine um tabuleiro de xadrez global. De um lado, os Estados Unidos. Do outro, a China. Em abril de 2025, uma peça crucial é movida: o presidente dos EUA anuncia <strong class="text-blue-300">tarifas retaliatórias</strong>. Essa decisão não é apenas uma notícia de jornal; é uma onda de choque que percorre toda a economia mundial, gerando uma enorme <strong class="text-blue-300">incerteza</strong>.
+                </p>
+                <p class="mt-4 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-3">
+                    Para os investidores, o futuro, que já era nebuloso, de repente fica coberto por uma névoa densa. É nesse ambiente que nossa história começa.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Seção 1 - Os Protagonistas -->
+        <div id="slide-3" class="slide bg-gray-800/50">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-sm font-bold uppercase text-blue-400 tracking-widest fade-in">Parte 1: O Cenário</h2>
+                <h3 class="mt-2 text-3xl md:text-5xl font-bold tracking-tight text-white fade-in fade-in-delay-1">As Pequenas Gigantes: O S&P 600</h3>
+                <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-2">
+                    Nosso foco não está nas gigantes da tecnologia, mas no coração da economia americana: as <strong class="text-blue-300">"small caps"</strong>. São empresas menores, ágeis, que formam o índice S&P 600. Elas são como um termômetro sensível da saúde econômica do país.
+                </p>
+                <p class="mt-4 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-3">
+                    Por que elas são tão importantes para nosso estudo? Porque, assim como barcos menores em uma tempestade, elas sentem as ondas da incerteza de forma muito mais intensa. Elas são o sismógrafo perfeito para medir o terremoto financeiro que estava por vir.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Seção 2 - As Pistas (COMBINADO) -->
+        <div id="slide-4" class="slide">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-sm font-bold uppercase text-blue-400 tracking-widest fade-in">Parte 2: O Referencial</h2>
+                <h3 class="mt-2 text-3xl md:text-5xl font-bold tracking-tight text-white fade-in fade-in-delay-1">As Pistas do Analista Financeiro</h3>
+                <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-2">
+                    Para entender o que aconteceu "por dentro" do mercado, seguimos quatro pistas principais:
+                </p>
+                <ul class="mt-4 space-y-4 text-lg text-gray-300">
+                    <li class="fade-in fade-in-delay-2"><strong class="text-blue-300">Volume:</strong> O "volume" da conversa. Mede o nível de interesse e agitação em torno de uma ação.</li>
+                    <li class="fade-in fade-in-delay-3"><strong class="text-blue-300">Liquidez:</strong> A "fluidez" do mercado. É a facilidade de comprar ou vender sem causar um grande impacto no preço.</li>
+                    <li class="fade-in fade-in-delay-4"><strong class="text-blue-300">Gaps de Preço:</strong> Os "saltos" misteriosos que o preço dá entre o fechamento de um dia e a abertura do outro. Um sinal claro de que algo grande aconteceu com o mercado "adormecido".</li>
+                    <li class="fade-in fade-in-delay-4"><strong class="text-blue-300">VWAP:</strong> O "preço justo" do dia. É o preço médio ponderado pelo volume, mostrando onde o dinheiro realmente trocou de mãos e servindo como nosso termômetro de equilíbrio.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Slide 5: Seção 4 - Análise de Resultados -->
+        <div id="slide-5" class="slide bg-blue-900/30">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-sm font-bold uppercase text-blue-400 tracking-widest fade-in">Parte 3: A Descoberta</h2>
+                <h3 class="mt-2 text-3xl md:text-5xl font-bold tracking-tight text-white fade-in fade-in-delay-1">O Que os Números Realmente nos Contam?</h3>
+                <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-2">
+                    Analisamos os dados de 32 empresas do S&P 600, cinco dias antes e cinco dias depois do anúncio. As descobertas foram reveladoras e pintam um quadro vívido da psicologia do mercado.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Insight 1 - Sumarização -->
+        <div id="slide-6" class="slide">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 fade-in">Insight 1: A Anatomia da Reação</h3>
+                <h4 class="mt-2 text-2xl md:text-3xl text-white fade-in fade-in-delay-1">Agitação, Medo e Reações Desiguais.</h4>
+                <ul class="mt-6 space-y-4 text-lg md:text-xl text-gray-300 list-disc list-inside">
+                    <li class="fade-in fade-in-delay-2">As médias confirmam o caos: Volume <strong class="text-green-400">subiu 40%</strong>, Liquidez <strong class="text-red-400">caiu 30%</strong> e os Gaps <strong class="text-green-400">explodiram 175%</strong>.</li>
+                    <li class="fade-in fade-in-delay-3">Mas a reação não foi uniforme! O <strong class="text-white">alto desvio padrão</strong> no Volume e nos Gaps mostra que algumas ações foram atingidas por um furacão, enquanto outras sentiram apenas uma brisa.</li>
+                    <li class="fade-in fade-in-delay-4">Em contraste, a diferença para a VWAP foi <strong class="text-white">muito estável</strong>. Apesar do caos externo, os algoritmos e grandes players mantiveram o mercado minimamente equilibrado durante o dia.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Slide 7: Insight 2 - Agrupamento -->
+        <div id="slide-7" class="slide bg-gray-800/50">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 fade-in">Insight 2: Os Três Grupos de Reação</h3>
+                <h4 class="mt-2 text-2xl md:text-3xl text-white fade-in fade-in-delay-1">Nem Todos Reagem da Mesma Forma.</h4>
+                <ul class="mt-6 space-y-4 text-lg md:text-xl text-gray-300 list-disc list-inside">
+                    <li class="fade-in fade-in-delay-2">No <strong class="text-white">Volume</strong>, surgiram 3 grupos: os "Super-Reativos" (+93%), os "Reativos" (a maioria, com +32%) e os "Indiferentes" (-1%).</li>
+                    <li class="fade-in fade-in-delay-3">Na <strong class="text-white">Liquidez</strong>, a mesma história: alguns sofreram pouco (-7%), mas a maioria teve quedas fortes (-32% e -47%), mostrando diferentes níveis de aversão ao risco.</li>
+                    <li class="fade-in fade-in-delay-4">Nos <strong class="text-white">Gaps</strong>, um ativo (NVEE) foi um ponto fora da curva (+1035%) por uma notícia de fusão, nos lembrando que cada empresa tem sua própria jornada.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8: Insight 3 - Associação Forte -->
+        <div id="slide-8" class="slide">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 fade-in">Insight 3: A Conexão Surpreendente</h3>
+                <h4 class="mt-2 text-2xl md:text-3xl text-white fade-in fade-in-delay-1">A Dança entre Volume e Liquidez.</h4>
+                <ul class="mt-6 space-y-4 text-lg md:text-xl text-gray-300 list-disc list-inside">
+                    <li class="fade-in fade-in-delay-2">Em meio ao caos de sinais desconexos, uma <strong class="text-white">única correlação forte e positiva</strong> emergiu: entre Volume e Liquidez.</li>
+                    <li class="fade-in fade-in-delay-3">Chamamos isso de <strong class="text-blue-300">"Resiliência Liquidez-Volume"</strong>. Onde o volume aumentou mais, a liquidez sofreu menos.</li>
+                    <li class="fade-in fade-in-delay-4"><strong class="text-white">O que isso nos diz?</strong> A própria agitação do mercado, o alto volume de negociações, criou uma "almofada" que amorteceu a queda da liquidez. Uma descoberta contraintuitiva e fascinante.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9: Insight 4 - Associação Fraca -->
+        <div id="slide-9" class="slide bg-gray-800/50">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 fade-in">Insight 4: O Elo Perdido</h3>
+                <h4 class="mt-2 text-2xl md:text-3xl text-white fade-in fade-in-delay-1">Por que as Outras Pistas Não se Conectaram?</h4>
+                 <ul class="mt-6 space-y-4 text-lg md:text-xl text-gray-300 list-disc list-inside">
+                    <li class="fade-in fade-in-delay-2">Todas as outras correlações foram <strong class="text-red-400">muito fracas</strong>. Por quê?</li>
+                    <li class="fade-in fade-in-delay-3"><strong class="text-white">Gaps são sobre o futuro, não o passado:</strong> Os gaps refletem notícias e medos que surgiram <strong class="text-blue-300">durante a noite</strong>. O volume e a liquidez do dia anterior não tinham como "adivinhar" o que estava por vir.</li>
+                    <li class="fade-in fade-in-delay-4"><strong class="text-white">VWAP é sobre equilíbrio:</strong> A diferença para a VWAP foi muito estável, mostrando um mercado equilibrado *durante o dia*. Isso é o oposto do drama dos gaps, que são movimentos de desequilíbrio *entre dias*. São fenômenos de naturezas diferentes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 10: Insight 5 - Regressão Coeficientes -->
+        <div id="slide-10" class="slide">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 fade-in">Insight 5: Decifrando o Código</h3>
+                <h4 class="mt-2 text-2xl md:text-3xl text-white fade-in fade-in-delay-1">As Pistas Escondidas na Regressão.</h4>
+                <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed fade-in fade-in-delay-2">
+                    Mesmo que o modelo não consiga *prever* os gaps, ele nos dá pistas sobre as <strong class="text-white">tendências</strong>:
+                </p>
+                <ul class="mt-4 space-y-4 text-lg md:text-xl text-gray-300 list-disc list-inside">
+                    <li class="fade-in fade-in-delay-2"><strong class="text-green-400">Mais Volume:</strong> Tende a levar a gaps <strong class="text-green-400">maiores</strong>. A agitação gera mais agitação.</li>
+                    <li class="fade-in fade-in-delay-3"><strong class="text-red-400">Preço Longe da VWAP:</strong> Se o preço fechou muito *abaixo* da média do dia, o gap seguinte tende a ser <strong class="text-red-400">menor</strong>. É um sinal de exaustão do movimento de venda.</li>
+                    <li class="fade-in fade-in-delay-4"><strong class="text-red-400">Menos Liquidez:</strong> Também tende a gerar gaps <strong class="text-red-400">menores</strong>. Um mercado "esvaziado" não tem força para grandes saltos na abertura.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 11: Insight 6 - Regressão R² -->
+        <div id="slide-11" class="slide bg-gray-800/50">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 fade-in">Insight 6: A Conexão Perdida</h3>
+                <h4 class="mt-2 text-2xl md:text-3xl text-white fade-in fade-in-delay-1">O Fluxo de Ordens Consegue Explicar os Gaps?</h4>
+                <ul class="mt-6 space-y-4 text-lg md:text-xl text-gray-300 list-disc list-inside">
+                    <li class="fade-in fade-in-delay-2">Aqui vem a grande surpresa da investigação: <strong class="text-red-400">NÃO!</strong></li>
+                    <li class="fade-in fade-in-delay-3">Nosso modelo estatístico mostrou que as pistas internas do mercado (volume, liquidez, VWAP) explicaram <strong class="text-white">menos de 5%</strong> da variação dos gaps.</li>
+                     <li class="fade-in fade-in-delay-4"><strong class="text-white">O veredito:</strong> Os gaps foram causados por um <strong class="text-blue-300">choque de informação externa</strong> (geopolítica). É como tentar prever um terremoto olhando apenas para o trânsito. O fluxo de ordens do dia anterior simplesmente não tinha como antecipar a magnitude da incerteza que viria.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 12: Conclusão -->
+        <div id="slide-12" class="slide bg-blue-900/30">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-sm font-bold uppercase text-blue-400 tracking-widest fade-in">Conclusões Finais</h2>
+                <h3 class="mt-2 text-3xl md:text-5xl font-bold tracking-tight text-white fade-in fade-in-delay-1">O Que Levamos Para Casa</h3>
+                <ul class="mt-6 space-y-5 text-lg md:text-xl text-gray-300">
+                    <li class="fade-in fade-in-delay-2">
+                        <strong class="text-white block">O Contexto é Rei:</strong> Em crises de informação, os dados internos do mercado nos dizem *como* ele está reagindo, mas não prevêem o *tamanho* do próximo impacto. O cenário externo dita o jogo.
+                    </li>
+                    <li class="fade-in fade-in-delay-3">
+                        <strong class="text-white block">A Dança da Liquidez:</strong> Alto volume pode ser sinal de pânico, não de saúde. A queda na liquidez é o verdadeiro perigo, mas o próprio volume pode, paradoxalmente, ajudar a amortecer essa queda.
+                    </li>
+                    <li class="fade-in fade-in-delay-4">
+                        <strong class="text-white block">O Drama é Noturno:</strong> Os gaps de preço são o reflexo do medo e da incerteza que se acumulam "no escuro". É neles que a assimetria de informação se manifesta de forma mais brutal. Para a Administração, a lição é clara: a análise quantitativa é poderosa, mas deve sempre ser combinada com uma profunda compreensão do contexto geopolítico e macroeconômico.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
